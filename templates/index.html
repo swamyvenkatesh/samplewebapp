@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+
+    <!-- slide start -->
+    <div class="slide-inner">
+        
+    </div>
+    <!-- slide end -->
+
+    <!-- inner content start -->
+    <div class="container">
+        <div class="inner-content">
+            <!-- perfected start -->
+            <div class="perfected">
+                
+                <!--  deliver one end  -->
+                <div class="clearfix">
+                    <form role="search" class="navbar-form-custom" action="search" method="get" >
+                    <!-- {% csrf_token %} -->
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Location, skills  ..." class="form-control" name="q" id="top-search" >
+                        </div>
+                    </form>
+                    
+                </div>
+
+
+                <!--  breakdown start  -->
+
+                <div class="breakdown">
+                  
+                    <div class="breakdown-inner col-sm-12">
+                        <div class="breakdown-list-one">
+                            {% if details %}
+                            <div class="table-responsive">
+
+                                <br>
+                                
+                                <table class="table" style="width: 500px;">
+                                    <thead>
+                                        <tr>
+                                            <th data-priority="1">Location
+                                            </th>   
+                                            <th data-priority="2">Experience 
+                                            </th>                                          
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for i in details %}
+                                            <tr>
+                                                <td>{{i.current_location}}</td>
+                                                <td>{{i.experience}}</td>
+                                            </tr>
+                                        {% endfor %}
+
+                                    </tbody>
+                                </table>
+
+                                <form method="post" action="/download">
+                                    {% csrf_token %}
+                                    <input type="submit" value="download" id="download_csv" />                    
+                                </form>
+
+                            </div>
+                            {%else%}
+                            <div class="table-responsive">
+                                No Results Found
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        
+                    </div>
+                    
+                </div>
+                <!--  breakdown end  -->
+            </div>
+            <!-- perfected end -->
+        </div>
+    </div>
+    <!-- inner content end -->
+
+</div>
+{% endblock %}

@@ -1,0 +1,195 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" >
+{% load staticfiles %}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <script src="{% static 'js/libs/moment.min.js' %}"></script>
+    <script src="{% static 'js/libs/jquery.min.js' %}"></script>
+    <script src="{% static 'js/libs/bootstrap.min.js' %}"></script> 
+    <style>
+        .inputWrapper {
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            /*Using a background color, but you can use a background image to represent a button*/
+            border:1px solid #c5c5c5;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            background: #fefefe; /* Old browsers */
+            background: -moz-linear-gradient(top,  #fefefe 1%, #f5f5f5 99%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fefefe), color-stop(99%,#f5f5f5)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #fefefe 1%,#f5f5f5 99%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #fefefe 1%,#f5f5f5 99%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #fefefe 1%,#f5f5f5 99%); /* IE10+ */
+            background: linear-gradient(to bottom,  #fefefe 1%,#f5f5f5 99%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+            color: #4d4843;
+            font-size:14px;
+            font-family:'latolight';
+            margin-bottom: 20px;
+            padding:0px 10px;
+            line-height:33px;
+            color:#626262;
+            text-align:center;
+            width:119px!important;
+            height:33px!important;
+            float:left;
+        }
+
+        .fileInput {
+            cursor: pointer;
+            height: 100%;
+            position:absolute;
+            top: 0;
+            right: 0;
+            /*This makes the button huge so that it can be clicked on*/
+            font-size:50px;
+        }
+        .like-it{
+            overflow: inherit!important;
+        }
+        .like-it ul{
+            padding: 10px 0px;
+            box-shadow: 2px -1px 52px -9px #CC0000;
+            -webkit-box-shadow: 2px -1px 52px -9px #CC0000;
+            -moz-box-shadow: 2px -1px 52px -9px #CC0000;
+            -o-box-shadow: 2px -1px 52px -9px #CC0000;
+        }
+        .like-it ul li{
+            margin: 0px 20px;
+        }
+        .like-it ul li ul{
+            border: none!important;
+            box-shadow: none!important;
+        }
+        .spcial-text{
+            margin-top: 40px;
+        }
+        .grammar-scale{
+            background: #fff;
+            border: 1px solid #565656;
+            border-radius: 10px;
+            font-family: "latolight";
+            font-size: 14px;
+            height: 245px;
+            margin-top: 70px;
+            overflow: hidden;
+            padding: 10px;
+            width: 100%;
+            resize: none;
+        }
+        .coupon-code{
+            width: 70%;
+            margin: 48px auto;
+        }
+        .coupon-code input[type=text]{
+            width: 100%;
+            height: 32px;
+            padding: 0px 10px;
+        }
+        .apply-btn{
+            background: none repeat scroll 0 0 #0067cc;
+            border-color: -moz-use-text-color -moz-use-text-color #109b02;
+            border-radius: 5px;
+            border-style: none none solid;
+            border-width: medium medium 0;
+            color: #fff;
+            font-size: 14px;
+            height: 32px;
+            line-height: 32px;
+            margin-top: 0;
+            text-align: center;
+            width: 65px;
+        }
+        .order-input{
+            margin-top: 40px!important;
+        }
+    </style>
+    <title>Sample Web App
+    </title>
+</head>
+
+<body >
+    <!-- header start -->
+    <header>
+        <div class="container-fluid header-bottom">
+            <div class="container header-top">
+                <div class="navbar-header">
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle nav-toggle" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand proof-logo"><img src="{% static 'images/civic_logo2.png' %}" title="" alt="" /></a>
+                </div>
+                <div class="login-collapse">
+                    <div class="login-sign-up">
+                        <ul>
+                            <!-- <li><a href="#" title="Order Proofreading" class="order-prof"><p> Order Proofreading </p> <i> <img src="{{ STATIC_URL }}images/order.png" alt="Order Proofreading"/> </i></a></li> -->
+                            <!-- <li><a href="#signin" title="Sign In">Sign In</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav nav-bbar">
+                            <li><a href="#" title="">Home</a></li>
+                            <li><a href="#" title="">Media</a></li>
+                            <li><a href="#" title="">About</a></li>
+                            <li><a href="#" title="">Help</a></li>
+                            <li><a href="#" title="">Testimonials</a></li>
+                            <li><a href="#" title="">Faqs</a></li>
+                            <li><a href="#" title="">Contact Us</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <div >
+
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+
+    <br><br>
+
+    <!-- footer start -->
+    <footer class="home-footer">
+        <div class="container">
+            <div class="col-sm-4">
+                <ul class="footer-list">
+
+                    <li><a href="#" title="support@civicswebapp.com">support@sampleswebapp.com</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 foter-midle">
+
+            </div>
+            <div class="col-sm-4">
+
+                <div><a href="#" title="" class="foter-logo"><div class=" proof-logo"><img src="{% static 'images/civic_logo2.png' %}" title="" alt="" /></div></a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script>
+        $(function() {
+            $(".inputWrapper").mousedown(function() {
+                var button = $(this);
+                button.addClass('clicked');
+                setTimeout(function(){
+                    button.removeClass('clicked');
+                },50);
+            });
+        });
+    </script>
+</body>
+</html>

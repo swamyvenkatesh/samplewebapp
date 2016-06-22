@@ -1,0 +1,4 @@
+INSERT INTO recruiters_applicants (id, resume, candidate_name, mobile, email, experience, current_location, preferred_location, expected_ctc, current_employer, designation, skills)
+VALUES ('101', '0', 'Suraj Kumar', '1234567890', 'suraj@gmail.com', '3.2', 'Mumbai', 'Delhi', '6.0', 'Tata Consultancy Services (TCS)', 'SystemEngineer', 'Had, Hadoop (MapReduce,Hive,Oozie,Sqoop etc), ORACLE,NETEZZA');
+INSERT INTO recruiters_applicants (id, resume, candidate_name, mobile, email, experience, current_location, preferred_location, expected_ctc, current_employer, designation, skills)
+VALUES ('102', '1', 'Ram Narayan', '1234567891', 'raman@gmail.com', '2.5', 'Mumbai', 'Chennai', '4.8', 'CELLOS INDIA', 'Associate', 'Mainframes, JCL, Cobol,DB2,CICS,VSAM, 
