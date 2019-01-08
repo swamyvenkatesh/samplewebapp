@@ -1,0 +1,20 @@
+{
+     "Label": "swift_qmove",
+     "Json": [
+          {
+               "Label": "swift_qmove",
+               "innerBlock": [
+                    "loadMetaData('555','QMoveApp', 'varqmove', '498497694')",
+                    "StartItr ItrPolSW varqmove",
+                    "runQuery('QueryEnrichPolSW','$$ItrPolSW')",
+                    "EndItr ItrPolSW"
+               ],
+               "SessionId": "555",
+               "Type": "SequenceDefn",
+               "TicketNo": "T01",
+               "_id": {
+                    "$oid": "5b7fdce35d0a272f2980467a"
+               }
+          }
+     ]
+}
