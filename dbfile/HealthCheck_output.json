@@ -1,0 +1,171 @@
+{
+     "Label": "var3",
+     "Json": [
+          {
+               "TicketNo": "T01",
+               "Label": "var3",
+               "SessionId": "259",
+               "Type": "udf",
+               "_id": {
+                    "$oid": "5b7fd3695d0a272abd725ae5"
+               },
+               "Value": [
+                    {
+                         "Results": [
+                              {
+                                   "Detail": "http://10.139.127.131:9080/SWIFT/LoginAction.do",
+                                   "Interface": "Swift_Online",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "http://10.139.127.131:9080/Workplace/WcmSignIn.jsp",
+                                   "Interface": "Swift_Online",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "http://inblrapsbizp01.alico.corp/MetlifeIndia_WCFMisc/AgentValidation.svc?wsdl",
+                                   "Interface": "Swift_Online_Surrender",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "http://10.139.127.147/india/jsp/common/index.jsp",
+                                   "Interface": "Aura_online",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "SWIFTDesapp",
+                                   "Interface": "SwiftDb",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "SWIFTDesapp",
+                                   "Interface": "tblMOS",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "SWIFTDesapp",
+                                   "Interface": "tblPolicyBazaar",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "SWIFTDesapp",
+                                   "Interface": "tblCreditor",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.131",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.130",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.139",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.137",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.155",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.153",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.154",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.160",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.159",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.157",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.135",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.133",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              },
+                              {
+                                   "Detail": "10.139.127.132",
+                                   "Interface": "FileNetService",
+                                   "Result": "Failed",
+                                   "bStatus": false,
+                                   "ColorCode_Tag": "#f4b942"
+                              }
+                         ],
+                         "Total": 21,
+                         "Success": 0,
+                         "ColorCode_Tag": "#f4b942",
+                         "checkobject": "NewBusinessChecks"
+                    }
+               ]
+          }
+     ]
+}
